@@ -39,4 +39,40 @@
     </declare-styleable>
 
 
+
+    <!-- Common attributes -->
+    <attr name="payyansDirectionOfConversion" format="enum">
+        <enum name="ASCIIToUnicode" value="0" />
+        <enum name="UnicodeToASCII" value="1" />
+    </attr>
+    <attr name="payyansFontMap" format="enum">
+        <enum name="ambili" value="0" />
+        <enum name="charaka" value="1" />
+        <enum name="haritha" value="2" />
+        <enum name="indulekha" value="3" />
+        <enum name="karthika" value="4" />
+        <enum name="manorama" value="5" />
+        <enum name="matweb" value="6" />
+        <enum name="nandini" value="7" />
+        <enum name="panchari" value="8" />
+        <enum name="revathi" value="9" />
+        <enum name="template" value="10" />
+        <enum name="uma" value="11" />
+        <enum name="valluvar" value="12" />
+    </attr>
+
+    <!-- Attributes for PayyansEditText -->
+    <declare-styleable name="PayyansEditText">
+        <attr name="payyansDirectionOfConversion" />
+        <attr name="payyansFontMap" />
+        <attr name="payyansOutputTo" format="reference" />
+    </declare-styleable>
+
+    <!-- Attributes for PayyansTextView -->
+    <declare-styleable name="PayyansTextView">
+        <attr name="payyansDirectionOfConversion" />
+        <attr name="payyansFontMap" />
+    </declare-styleable>
+
+
 </resources>
