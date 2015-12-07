@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:transliterator="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_header" />
+
+        <TextView
+            style="@style/RegularTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transliteration_description" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transliteration_header_transliterator_textview" />
+
+        <org.libindic.transliteration.TransliteratorTextView
+            style="@style/SampleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            transliterator:targetLanguage="english_US"
+            android:text="@string/transliteration_sample_1" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transliteration_header_transliterator_edittext" />
+
+        <org.libindic.render.IndicEditText
+            android:id="@+id/edtTransliterator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_hint_enter_a_sentence" />
+
+        <Spinner
+            android:id="@+id/spTargetLanguage"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/RegularButton"
+            android:id="@+id/btTransliterate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transliteration_button_transliterate" />
+
+        <TextView
+            style="@style/LabelTextView"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transliteration_textview_transliterated_text" />
+
+        <org.libindic.render.IndicTextView
+            android:id="@+id/tvTransliteratorOutput"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transliteration_textview_self_transliteration" />
+
+        <org.libindic.transliteration.TransliteratorEditText
+            android:id="@+id/edtTransliterator1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/edittext_hint_enter_a_sentence"
+            transliterator:targetLanguage="malayalam"
+            transliterator:transliteratedTextOutputTo="@+id/edtTransliterator1" />
+
+    </LinearLayout>
+</ScrollView>
+<!-- From: file:/home/sujith/AndroidStudioProjects/libindic-sdk/sdk-demo/src/main/res/layout/transliterator_fragment.xml -->

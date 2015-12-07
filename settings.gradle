@@ -1,1 +1,1 @@
-include ':sdk-modules', ':sdk-render'
+include ':sdk-modules', ':sdk-render', ':sdk-demo'

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_header" />
+
+        <TextView
+            style="@style/RegularTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soundex_description" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soundex_header" />
+
+        <org.libindic.render.IndicEditText
+            android:id="@+id/edtSoundex1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_hint_enter_a_word" />
+
+
+        <org.libindic.render.IndicEditText
+            android:id="@+id/edtSoundex2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_hint_enter_a_word" />
+
+        <Button
+            android:id="@+id/btCompare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soundex_button_compare" />
+
+        <LinearLayout
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soundex_soundex_code_1" />
+
+            <org.libindic.render.IndicTextView
+                android:id="@+id/tvSoundexCode1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soundex_soundex_code_2" />
+
+            <org.libindic.render.IndicTextView
+                android:id="@+id/tvSoundexCode2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/LabelTextView"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soundex_textview_compare_result" />
+
+        <TextView
+            style="@style/RegularTextView"
+            android:id="@+id/tvCompareResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

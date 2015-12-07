@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/sujith/AndroidStudioProjects/libindic-sdk/sdk-modules/src/main/res/values/attrs.xml -->
+    <eat-comment/>
+    <attr format="enum" name="payyansDirectionOfConversion">
+        <enum name="ASCIIToUnicode" value="0"/>
+        <enum name="UnicodeToASCII" value="1"/>
+    </attr>
+    <attr format="enum" name="payyansFontMap">
+        <enum name="ambili" value="0"/>
+        <enum name="charaka" value="1"/>
+        <enum name="haritha" value="2"/>
+        <enum name="indulekha" value="3"/>
+        <enum name="karthika" value="4"/>
+        <enum name="manorama" value="5"/>
+        <enum name="matweb" value="6"/>
+        <enum name="nandini" value="7"/>
+        <enum name="panchari" value="8"/>
+        <enum name="revathi" value="9"/>
+        <enum name="template" value="10"/>
+        <enum name="uma" value="11"/>
+        <enum name="valluvar" value="12"/>
+    </attr>
+    <attr format="enum" name="targetLanguage">
+        <enum name="english_US" value="0"/>
+        <enum name="english_IN" value="1"/>
+        <enum name="hindi" value="2"/>
+        <enum name="bengali" value="3"/>
+        <enum name="punjabi" value="4"/>
+        <enum name="gujarati" value="5"/>
+        <enum name="oriya" value="6"/>
+        <enum name="tamil" value="7"/>
+        <enum name="telugu" value="8"/>
+        <enum name="kannada" value="9"/>
+        <enum name="malayalam" value="10"/>
+    </attr>
+    <declare-styleable name="FortuneTextView"><attr format="enum" name="fortuneQuoteSet"><enum name="chanakya" value="0"/><enum name="malayalam_proverbs" value="1"/><enum name="thirukkural" value="2"/></attr><attr format="integer" name="fortuneTimeInterval"/><attr format="string" name="fortuneSearchPattern"/></declare-styleable>
+    <declare-styleable name="PayyansEditText"><attr name="payyansDirectionOfConversion"/><attr name="payyansFontMap"/><attr format="reference" name="payyansOutputTo"/></declare-styleable>
+    <declare-styleable name="PayyansTextView"><attr name="payyansDirectionOfConversion"/><attr name="payyansFontMap"/></declare-styleable>
+    <declare-styleable name="TransliteratorEditText"><attr format="reference" name="transliteratedTextOutputTo"/><attr name="targetLanguage"/></declare-styleable>
+    <declare-styleable name="TransliteratorTextView"><attr name="targetLanguage"/></declare-styleable>
+    <!-- From: file:/home/sujith/AndroidStudioProjects/libindic-sdk/sdk-modules/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">sdk-modules</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_header" />
+
+        <TextView
+            style="@style/RegularTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/character_details_description" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/character_details_header" />
+
+        <org.libindic.render.IndicEditText
+            android:id="@+id/edtCharDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/character_details_edittext_hint" />
+
+        <Button
+            android:id="@+id/btGetCharDetails"
+            style="@style/RegularButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/character_details_button_details" />
+
+        <TextView
+            style="@style/LabelTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/character_details_textview_details"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCharDetails"
+            style="@style/RegularTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin" />
+    </LinearLayout>
+</ScrollView>
+<!-- From: file:/home/sujith/AndroidStudioProjects/libindic-sdk/sdk-demo/src/main/res/layout/character_details_fragment.xml -->

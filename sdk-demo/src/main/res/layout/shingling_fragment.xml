@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_header" />
+
+        <TextView
+            style="@style/RegularTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shingling_description" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shingling_header" />
+
+        <org.libindic.render.IndicEditText
+            android:id="@+id/edtShingling"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_hint_enter_a_sentence" />
+
+        <EditText
+            android:id="@+id/edtWValue"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shingling_edittext_hint_w_value" />
+
+        <Button
+            style="@style/RegularButton"
+            android:id="@+id/btGetShingles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shingling_button_get_shingles" />
+
+        <TextView
+            style="@style/LabelTextView"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shingling_textview_word_shingles" />
+
+        <TextView
+            style="@style/RegularTextView"
+            android:id="@+id/tvShingles"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

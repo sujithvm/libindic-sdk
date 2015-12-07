@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_header" />
+
+        <TextView
+            style="@style/RegularTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payyans_description" />
+
+        <TextView
+            style="@style/HeaderTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payyans_header_general" />
+
+        <org.libindic.render.IndicEditText
+            android:id="@+id/edtPayyans"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_hint_enter_a_sentence" />
+
+        <TextView
+            style="@style/LabelTextView"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payyans_label_font_map" />
+
+        <Spinner
+            android:id="@+id/spinnerFontMap"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/LabelTextView"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payyans_label_direction_conversion" />
+
+        <Spinner
+            android:id="@+id/spinnerDirection"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/RegularButton"
+            android:id="@+id/btConvert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payyans_convert_text" />
+
+        <TextView
+            style="@style/LabelTextView"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payyans_textview_convert_result" />
+
+        <org.libindic.render.IndicTextView
+            style="@style/RegularTextView"
+            android:id="@+id/tvPayyans"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
+<!-- From: file:/home/sujith/AndroidStudioProjects/libindic-sdk/sdk-demo/src/main/res/layout/payyans_fragment.xml -->
