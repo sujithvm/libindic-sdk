@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/libindic-sdk.iml" filepath="$PROJECT_DIR$/libindic-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk-modules/sdk-modules.iml" filepath="$PROJECT_DIR$/sdk-modules/sdk-modules.iml" />
     </modules>
   </component>
 </project>
