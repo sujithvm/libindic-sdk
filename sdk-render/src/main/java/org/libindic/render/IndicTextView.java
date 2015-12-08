@@ -7,7 +7,7 @@ import android.widget.TextView;
 /**
  * Created by sujith on 7/12/15.
  */
-public class IndicTextView extends TextView {
+public class IndicTextView extends ITextView {
     public IndicTextView(Context context) {
         super(context);
     }

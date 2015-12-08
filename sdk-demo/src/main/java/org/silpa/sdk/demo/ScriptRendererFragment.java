@@ -18,6 +18,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import org.libindic.render.IndicEditText;
+import org.libindic.render.ScriptRenderer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +30,7 @@ import java.util.Map;
  */
 public class ScriptRendererFragment extends Fragment {
 
-    //private ScriptRenderer scriptRenderer;
+    private ScriptRenderer scriptRenderer;
 
     private IndicEditText edtIndicText;
     private EditText edtWidth, edtHeight, edtFontSize;
@@ -68,7 +69,7 @@ public class ScriptRendererFragment extends Fragment {
 
     private void initView(View view) {
 
-        //scriptRenderer = new ScriptRenderer(getActivity());
+        scriptRenderer = new ScriptRenderer(getActivity());
 
         edtIndicText = (IndicEditText) view.findViewById(R.id.edtRenderInput);
         edtWidth = (EditText) view.findViewById(R.id.edtRenderWidth);
@@ -91,13 +92,13 @@ public class ScriptRendererFragment extends Fragment {
                 int height = getValue(edtHeight, DEFAULT_HEIGHT);
                 int fontSize = getValue(edtFontSize, DEFAULT_FONT_SIZE);
 
-//                Bitmap bitmap = scriptRenderer.getRenderedBitmap(text, fontSize,
-//                        colorMap.get(listColor.get(spRenderColor.getSelectedItemPosition())), height, width);
-//                try {
-//                    ivRenderedImage.setImageBitmap(bitmap);
-//                } catch (Exception e) {
-//
-//                }
+                Bitmap bitmap = scriptRenderer.getRenderedBitmap(text, fontSize,
+                        colorMap.get(listColor.get(spRenderColor.getSelectedItemPosition())), height, width);
+                try {
+                    ivRenderedImage.setImageBitmap(bitmap);
+                } catch (Exception e) {
+
+                }
             }
         });
     }

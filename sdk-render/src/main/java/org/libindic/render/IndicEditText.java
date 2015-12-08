@@ -7,7 +7,7 @@ import android.widget.EditText;
 /**
  * Created by sujith on 7/12/15.
  */
-public class IndicEditText extends EditText {
+public class IndicEditText extends IEditText {
     public IndicEditText(Context context) {
         super(context);
     }
